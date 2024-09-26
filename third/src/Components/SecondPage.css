@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.learnmore{
+    height: 4vh;
+    background-color: black;
+    padding-top: 13px;
+}
+
+.learnmore p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    color: white;
+   
+}
+
+.centerPosition{
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%,-50%);
+    display: inline-block;
+}
+.centerPosition .up{
+    font-size: 22px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+}
+.centerPosition .down{
+    font-size: 50px;
+    font-weight: 600;
+    text-align: center;
+    color: white;
+}
+
+.centerPosition .button {
+    padding: 20px;
+    margin-top: 10px;
+    transform: translateX(200px);
+    cursor: pointer;
+    background-color: white;
+    border: none;
+    border-radius: 3px;
+    transition: .4s;
+}
+button{
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.button:hover{
+    background-color:grey  ;
+}

@@ -1,0 +1,21 @@
+.cls1{
+    width: 260px;
+    height: 200px;
+    text-align: center;
+    align-content: center;
+    margin-bottom: 5%;
+}
+.cls1 p{
+    color: grey;
+}
+
+.cls2 ul{
+    list-style: none;
+}
+
+.btn{
+    border-radius: 0px;
+}
+.tet1{
+    border-radius: 0px;
+}

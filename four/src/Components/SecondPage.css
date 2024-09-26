@@ -1,0 +1,59 @@
+.container2{
+    /* background-color: aqua; */
+    display: grid;
+    grid-template-columns: 0.5fr 3fr 0.8fr;
+    grid-template-rows: 3fr  3fr  3fr 3.5fr;
+    column-gap: 30px;
+    row-gap: 30px;
+    grid-template-areas: "one two three" "one four four" "five five five " "six six six";
+}
+
+/* .item{
+    border: 1px solid black;
+} */
+.item1{
+    
+    grid-area: one;
+}
+.item2{
+    
+    grid-area: two;
+}
+.item3{
+   /* padding: 20px 20px 20px 30px; */
+    grid-area: three;
+
+}
+.item4{
+    
+    grid-area: four;
+}
+.item5{
+    
+    grid-area: five;
+}
+.item6{
+    grid-area: six;
+   align-items: center;
+   justify-content: center;
+
+
+}
+
+.right h1{
+    font-size: 50px;
+    padding-bottom: 4%;
+}
+.right p{
+    font-size: 18px;
+    color: gray;
+    padding-bottom: 4%;
+}
+.btn1,.btn2{
+    background-color: black;
+    color: white;
+    padding: 10px;
+    margin-right: 30px;
+    border: none;
+    border-radius: 10px;
+}

@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.fourth{
+    margin-top: 100px;
+    padding: 50px;
+    background-color: rgb(240, 238, 235);
+}
+.pic{
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+
+}
+.pic img{
+    width: 1232px;
+    height: 693px;
+}
+.text{
+    display: flex;
+    margin-top: 50px;
+    margin-left: 15%;
+    margin-right:15% ;
+    justify-content: center;
+
+}
+.text h3{
+    font-size: 22px;
+    padding-bottom: 9px;
+}
+.text p{
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 1px;
+}
+.text .start,.center{
+    padding-right: 25px;
+}
+
+.btun{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    
+}
+.btun button{
+    background-color: rgb(240, 238, 235);
+    color: rgb(107, 107, 240);
+    padding: 20px;
+    border: 1px,solid, rgb(107, 107, 240);
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+
+.btn:hover{
+    background-color: rgb(107, 107, 240);
+    color: rgb(240, 238, 235);
+    border-radius: none;
+}

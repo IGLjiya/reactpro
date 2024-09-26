@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.fifth {
+    margin-top: 100px;
+    margin-left: 230px;
+    margin-bottom: 100px;
+    background-color: rgb(240, 238, 235);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    width: 1300px;
+
+}
+.fifth .start{
+    margin-left: 80px;
+}
+.fifth .start h2{
+    font-size: 30px;
+    margin-bottom: 30px;
+    
+}
+.fifth .start p{
+    font-size: 18px;
+    color: rgb(121, 120, 119);
+     margin-bottom: 30px;
+}
+.fifth .start .btn2{
+    padding: 15px;
+    cursor: pointer;
+    color: rgb(107, 107, 240);
+    border: solid 1px rgb(107, 107, 240);
+    border-radius: 5px;
+}
+
+.btn2:hover{
+    background-color: rgb(221, 223, 224);
+}
+.fifth .end{
+    margin-right: 30px;
+}

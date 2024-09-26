@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(242, 241, 241);
+    padding: 10px;
+    height: 5vh;
+    
+}
+
+ul li{
+    list-style: none;
+    display: inline-block;
+    padding-inline: 15px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+.btn4{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 10px;
+    border: none;
+    gap: 5px;
+    transition: 0.5s;
+    border-radius: 5px;
+
+}
+.btn4:hover{
+    background-color: rgb(210, 212, 214);
+}
