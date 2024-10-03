@@ -6,13 +6,13 @@ import UserTable from './Pages/UserTable';
 
 
 const App = () => {
-  fetch("https://jsonplaceholder.typicode.com/users")
-    .then((res)=> res.json())
-    .then((data) => console.log(data))
-    .catch((err) => console.log(err));
+  // fetch("https://jsonplaceholder.typicode.com/users")
+  //   .then((res)=> res.json())
+  //   .then((data) => console.log(data))
+  //   .catch((err) => console.log(err));
     return (
       <div>
-        {/* <LandingPages/> */}
+        <LandingPages/>
         <Toaster position='top-right'/>
         {/* <ShopPage/> */}
         {/* <UserTable/> */}

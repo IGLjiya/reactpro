@@ -1,11 +1,11 @@
 import React from 'react';
-import { Table} from 'react-bootstrap'
+import { Table } from 'react-bootstrap'
 
 
-const TableUser = ({user}) => {
-    return (
-        <div>
-            <Table striped="columns" responsive border={1} style={{borderCollapse:"collapse", width:"100%"}}>
+const TableUser = ({ user }) => {
+  return (
+    <div>
+      <Table striped="columns" responsive border={1} style={{ borderCollapse: "collapse", width: "100%" }}>
         <thead>
           <tr>
             <th>ID</th>
@@ -30,8 +30,8 @@ const TableUser = ({user}) => {
         </tbody>
       </Table>
 
-        </div>
-    );
+    </div>
+  );
 }
 
 export default TableUser;
