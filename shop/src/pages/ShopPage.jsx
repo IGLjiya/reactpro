@@ -33,8 +33,9 @@ const ShopPage = () => {
                     />
                 }
             </div>
-            <div id='#cart' className='text-center pt-5'>
-                <h1>Cart</h1>
+          
+            <div className='pt-5'>
+                <h1 className='text-center'>Cart</h1>
                 <div className="d-flex mt-3 flex-wrap gap-3">
                     {
                         cartList.map((product) => {
@@ -47,6 +48,7 @@ const ShopPage = () => {
                     }
                 </div>
             </div>
+           
         </Fragment>
     );
 }

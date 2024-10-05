@@ -9,8 +9,8 @@ export const products = [
         "rating": 4.94,
         "stock": 5,
         "tags": [
-            "beauty",
-            "mascara"
+            "Beauty",
+            "Mascara"
         ],
         "brand": "Essence",
         "sku": "RCH45Q1A",
