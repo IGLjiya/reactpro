@@ -77,7 +77,7 @@ const Todolist = () => {
             }
             return todo
         })
-        setEditTask(res)
+        setTodoList(res)
         setEditTask("")
         setEditbleTask(null)
     }
