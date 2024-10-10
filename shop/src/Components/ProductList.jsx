@@ -2,7 +2,6 @@ import React, { Fragment, useContext } from 'react';
 // import { IoMdCart } from "react-icons/io";
 import { MdShoppingCart } from 'react-icons/md'
 import toast from 'react-hot-toast'
-
 import { useCart } from '../Hooks';
 
 
