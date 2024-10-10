@@ -1,6 +1,6 @@
-import React, { useContext, useRef } from 'react';
+import React, { useRef } from 'react';
 import { FaHeart, FaShoppingCart } from 'react-icons/fa'
-import { cartContext } from '../App';
+import { useCart } from '../Hooks';
 
 
 const NavBar = () => {
@@ -11,7 +11,7 @@ const NavBar = () => {
     //     cartSectionRef.current.scrollIntoView({behavior : "smooth"})
     // }
 
-    const { cartList } = useContext(cartContext)
+    const { cartList } = useCart()
     return (
         <div className='px-3 d-flex justify-content-between border-bottom align-items-center ' style={{ height: "60px" }}>
             <div className='fs-3 fw-bold' style={{ cursor: "pointer" }}>SHOPIFY</div>

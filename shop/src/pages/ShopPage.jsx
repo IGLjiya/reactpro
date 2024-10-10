@@ -3,12 +3,13 @@ import NavBar from '../Components/NavBar';
 import { products } from '../Constents/Products';
 import ProductList from '../Components/ProductList';
 import Modal from '../Components/Modal';
-import { cartContext } from '../App';
+
+import { useCart } from '../Hooks';
 
 const ShopPage = () => {
     const [selectedProduct, setSelectedProduct] = useState(null)
 
-    const { cartList } = useContext(cartContext)
+    const { cartList } = useCart()
 
     return (
         <Fragment>

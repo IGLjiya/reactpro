@@ -1,14 +1,15 @@
 import React, { Fragment, useContext } from 'react';
 // import { IoMdCart } from "react-icons/io";
-import { cartContext } from '../App';
 import { MdShoppingCart } from 'react-icons/md'
 import toast from 'react-hot-toast'
+
+import { useCart } from '../Hooks';
 
 
 
 const ProductList = ({ product, setSelectedProduct, cart }) => {
 
-    const { cartList, setCartList } = useContext(cartContext)
+    const { cartList, setCartList } = useCart()
 
     const handleAddToCart = () => {
         const exist = cartList.find((element) => element.id == product.id)
