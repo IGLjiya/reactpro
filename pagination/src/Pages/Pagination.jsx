@@ -3,6 +3,7 @@ import { CgShoppingCart } from 'react-icons/cg'
 import { PageContext } from '../Provider/AllProvider';
 import { FaSearch } from "react-icons/fa";
 import toast from 'react-hot-toast';
+import { Link } from 'react-router-dom';
 
 
 const Pagination = () => {
@@ -21,7 +22,6 @@ const Pagination = () => {
                 const skip = (currentPage - 1) * limit
                 const response = await fetch(`https://dummyjson.com/products?limit=${limit}&skip=${skip}`)
                 const result = await response.json()
-
                 const filteredData = result.products.filter((product)=>product.title.toLowerCase().includes(searchItem.toLowerCase()))
                 setProducts(filteredData)
                 if (totalPage == -1) {
@@ -37,7 +37,7 @@ const Pagination = () => {
         getProducts()
         // console.log(product);
 
-    }, [currentPage])
+    }, [currentPage, searchItem])
 
 
     return (
@@ -58,7 +58,7 @@ const Pagination = () => {
                             <div>
                                 <img src={item.images[0]} alt={item.title} style={{ width: "15rem", aspectRatio: 1 / 1, objectFit: "contain" }} />
                             </div>
-                            <h6>{item.title}</h6>
+                            <h6 className='text-center'><Link to={`single-view/${item.id}`}>{item.title}</Link></h6>
                             <p>{item.description}</p>
                             <button className='w-100 mt-2 btn btn-outline-success p-1'><CgShoppingCart /> Add To Cart</button>
                         </div>
