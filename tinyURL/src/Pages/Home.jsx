@@ -34,7 +34,7 @@ const Home = () => {
         <div className='d-flex flex-column gap-5 justify-content-center align-items-center' style={{ height: "100vh" }}>
             <div className='d-flex flex-column gap-3 w-50'>
                 <input className=' form-control border-success' type="text" placeholder='Enter URL' value={url} onChange={(event) => setUrl(event.target.value)} />
-                <button onClick={() => getUrl()} className='btn btn-outline-success d-flex justify-content-center align-items-center'><TiTick />Submit</button>
+                <button onClick={() => getUrl()} className='btn btn-outline-success d-flex justify-content-center align-items-center'><TiTick size={30} />Submit</button>
             </div>
             <div className='w-50 p-5 border' style={{ height: "150px" }}>
                 URL :-{Data}
